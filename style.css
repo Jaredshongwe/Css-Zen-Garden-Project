@@ -122,10 +122,10 @@ header {
   display: -ms-grid;
   display: grid;
   text-align: center;
-  -ms-grid-rows: (20%)[6];
+  -ms-grid-rows: (25%)[5];
   -ms-grid-columns: (50%)[2];
-      grid-template: repeat(6, 20%)/repeat(2, 50%);
-  row-gap: 1%;
+      grid-template: repeat(5, 25%)/repeat(2, 50%);
+  row-gap: .5em;
   margin-top: 20em;
 }
 
@@ -143,9 +143,8 @@ header {
   padding-left: 10px;
   margin-bottom: 40px;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
   -ms-grid-column: 2;
-  grid-area: 2 / 2 / 3 / 2;
+  grid-area: 2 / 2 / 2 / 2;
 }
 
 .benefits {
@@ -154,20 +153,22 @@ header {
   -ms-grid-column: 1;
   grid-area: 3 / 1 / 4 / 1;
   padding-left: 10px;
-  margin-bottom: 40px;
+  margin-top: 80px;
 }
 
 .requirements {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  grid-area: 4 / 1 / 5 / 1;
+  -ms-grid-column: 2;
+  grid-area: 4 / 2 / 5 / 2;
   padding-left: 10px;
-  margin-bottom: 40px;
 }
 
 p[role="contentinfo"] {
+  position: absolute;
+  margin-top: 10%;
   border: 1px solid red;
+  text-align: center;
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -259,5 +260,29 @@ footer a:link, footer a:visited {
   right: 0;
   width: 148px;
   height: 110px;
+}
+
+@media (min-width: 20em) and (max-width: 50em) {
+  .supporting {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 40em) {
+  body {
+    font-size: 70%;
+  }
+}
+
+@media (min-width: 50em) {
+  body {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 70em) {
+  body {
+    font-size: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

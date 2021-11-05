@@ -16,6 +16,8 @@ $color-5: #ffffff; // White
 	row-gap: 1%;
 	column-gap: 0.5%;
 }
+
+
 // Fonts
 $primary-font: 'Merienda', cursive;
 $secondary-font: 'Raleway', sans-serif;
@@ -140,8 +142,8 @@ header {
 .supporting {	
 	display: grid;
 	text-align: center;
-	grid-template: repeat(6, 20%) / repeat(2, 50%);
-	row-gap: 1%;
+	grid-template: repeat(5, 25%) / repeat(2, 50%);
+	row-gap: .5em;
 	margin-top: 20em;
 	}
 
@@ -153,21 +155,24 @@ header {
 .participation {
 	padding-left: 10px; 
 	margin-bottom: 40px;
-	grid-area: 2 / 2 / 3 / 2;
+	grid-area: 2 / 2 / 2 / 2;
 	}
 .benefits {	
 	grid-area: 3 / 1 / 4 / 1;
 	padding-left: 10px; 
-	margin-bottom: 40px;
+	margin-top: 80px;
 	}
 .requirements {	
-	grid-area: 4 / 1 / 5 / 1;
+	grid-area: 4 / 2 / 5 / 2;
 	padding-left: 10px; 
-	margin-bottom: 40px;
 	}
+
 p[role="contentinfo"]{
-		border: 1px solid red;
-		grid-area: 5 / 1 / 5 / span 2;
+	position: absolute;
+	margin-top: 10%;
+	border: 1px solid red;
+	text-align: center;
+	grid-area: 5 / 1 / 5 / span 2;
 	}
 
 		
@@ -254,25 +259,18 @@ footer a:link, footer a:visited {
 	height: 110px;
 	}
 
-//Sizing
-
-// breakpoints
-   
-$S:     768px;   
-$M:     1024px;     
-$L:     1600px;   
-
-// media queries
-
-@mixin MQ($canvas) {
-  @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; } 
-  }
-  @else if $canvas == M {
-   @media only screen and (min-width: $M) { @content; } 
-  }
-  @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; } 
-  }
+	//Media Queries
+@media (min-width:20em) and (max-width:50em){
+    .supporting {display: inline-block;}
 }
-
+@media (min-width:30em){
+}
+@media (min-width:40em){
+    body{font-size: 70%;}
+}
+@media (min-width:50em){
+    body{font-size: 80%;}
+}
+@media (min-width:70em){
+    body{font-size: 100%;}
+}
