@@ -1,0 +1,278 @@
+// Colors
+
+$color-1: #A53030; // Dark red
+$color-2: #000000; // Black
+$color-3: #917050; // Bronze brown
+$color-4: #797979; // Light grey
+$color-5: #ffffff; // White
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Raleway&display=swap');
+
+%grid{
+//Grid-reference
+	display: grid;
+	grid-template: repeat(4, 25%) / repeat(8, 12.5%);
+	row-gap: 1%;
+	column-gap: 0.5%;
+}
+// Fonts
+$primary-font: 'Merienda', cursive;
+$secondary-font: 'Raleway', sans-serif;
+
+// Images
+$header:"./assets/Header_idea.jpg";
+$background:"./assets/Body_back_idea.jpg";
+
+//Base Style
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753;  
+	margin: 0; 
+	padding: 0;
+	}
+body::before{
+	content: "";
+	background: url($background) no-repeat bottom right;
+	background-size: cover;
+    position: fixed;
+	height: 100%;
+	width: 100%;
+	}
+header::before{
+		content: "";
+		background: url($header) no-repeat bottom right;
+		background-size: cover;
+		position: absolute;
+		height: 10em;
+		width: 20em;
+		}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	font: $secondary-font;
+	}
+h3 { 
+	font: $primary-font;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+.page-wrapper { 
+	//background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left;
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	position: relative;
+	}
+
+.intro { 
+	min-width: 470px;
+	width: 100%;
+	}
+
+header h1 { 
+	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
+	margin-top: 10px;
+	display: block;
+	width: 219px;
+	height: 87px;
+	float: left;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+header h2 { 
+	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
+	margin-top: 58px; 
+	margin-bottom: 40px; 
+	width: 200px; 
+	height: 18px; 
+	float: right;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+header {
+	padding-top: 20px;
+	height: 87px;
+}
+
+.summary {
+	clear: both; 
+	margin: 20px 20px 20px 10px; 
+	width: 160px; 
+	float: left;
+	}
+.summary p {
+	font: italic 1.1em/2.2 georgia; 
+	text-align: center;
+	}
+
+
+//Paragraphs
+.supporting {	
+	display: grid;
+	text-align: center;
+	grid-template: repeat(6, 20%) / repeat(2, 50%);
+	row-gap: 1%;
+	margin-top: 20em;
+	}
+
+.explanation {	
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	grid-area: 1 / 1 / 2 / 2;
+	}
+.participation {
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	grid-area: 2 / 2 / 3 / 2;
+	}
+.benefits {	
+	grid-area: 3 / 1 / 4 / 1;
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	}
+.requirements {	
+	grid-area: 4 / 1 / 5 / 1;
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	}
+p[role="contentinfo"]{
+		border: 1px solid red;
+		grid-area: 5 / 1 / 5 / span 2;
+	}
+
+		
+footer { 
+	text-align: center; 
+	grid-area: 6 / 1 / 6 / span 2;
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+
+.sidebar {
+	margin-left: 600px; 
+	position: absolute; 
+	top: 0; 
+	right: 0;
+	overflow: hidden;
+	}
+.sidebar .wrapper { 
+	font: 10px verdana, sans-serif; 
+	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
+	padding: 10px; 
+	margin-top: 150px; 
+	width: 130px; 
+	}
+.sidebar h3.select { 
+	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
+	margin: 10px 0 5px 0; 
+	width: 97px; 
+	height: 16px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.archives { 
+	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:57px; 
+	height: 14px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.resources { 
+	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:63px; 
+	height: 10px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em; 
+	//background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color: #988F5E;
+	}
+.sidebar li a:visited {
+	color: #B3AE94;
+	}
+
+
+.extra1 {
+	//background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
+	position: absolute; 
+	top: 40px; 
+	right: 0; 
+	width: 148px; 
+	height: 110px;
+	}
+
+//Sizing
+
+// breakpoints
+   
+$S:     768px;   
+$M:     1024px;     
+$L:     1600px;   
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+}
+
