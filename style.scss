@@ -135,8 +135,8 @@ header {
 
 .summary {
 	//clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 40em; 
+	//margin: 20px 20px 20px 10px; 
+	width: 40%; 
 	//float: left;
 	margin-top: 10em;
 	}
@@ -310,11 +310,18 @@ footer a:link, footer a:visited {
 @media (min-width:20em) and (max-width:50em){
     .supporting {display: inline-block;}
 	.sidebar .wrapper {flex-direction: column;}
+	.sidebar{
+		//background: $color-2;
+		top: 5%;
+	.wrapper { 
+		width: 70%;
+		}
+	}
 }
 @media (min-width:30em){
 }
 @media (min-width:40em){
-    body{font-size: 70%;}
+    body{font-size: 70%;} 
 }
 @media (min-width:50em){
     body{font-size: 80%;}
