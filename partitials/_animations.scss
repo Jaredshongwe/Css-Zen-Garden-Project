@@ -1,0 +1,15 @@
+//Swimming koi
+@keyframes spin {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
+//Reveal Nav
+@keyframes showmenu {
+    from {display: none;}
+    to {display: inline-block;}
+}

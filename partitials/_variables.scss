@@ -1,0 +1,21 @@
+// Colors
+$color-1: #A53030; // Dark red
+$color-2: #0e0e0e; // Black
+$color-3: #917050; // Bronze brown
+$color-4: #797979; // Light grey
+$color-5: #ffffff; // White
+
+$sm-break: 48em;
+$big-break: 49em;
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Raleway&display=swap');
+
+// Fonts
+$primary-font: 'Merienda',cursive;
+$secondary-font: 'Raleway',sans-serif;
+
+// Images
+$header:"./assets/Header.png";
+$background:"./assets/Body_back_idea.jpg";
+$koi:"./assets/Koi.png";

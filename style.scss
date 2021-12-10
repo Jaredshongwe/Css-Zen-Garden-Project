@@ -1,31 +1,11 @@
-// Colors
-
-$color-1: #A53030; // Dark red
-$color-2: #0e0e0e; // Black
-$color-3: #917050; // Bronze brown
-$color-4: #797979; // Light grey
-$color-5: #ffffff; // White
-
-$sm-break: 48em;
-$big-break: 49em;
-
-@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Raleway&display=swap');
+@import "./partitials/variables";
+@import "./partitials/animations";
 
 //Mixin for sizing
 @mixin size($w: 100%, $h: 100%) {
     width: $w;
     height: $h;
 }
-
-// Fonts
-$primary-font: 'Merienda',cursive;
-$secondary-font: 'Raleway',sans-serif;
-
-// Images
-$header:"./assets/Header.png";
-$background:"./assets/Body_back_idea.jpg";
-$koi:"./assets/Koi.png";
 
 // Top black Line
 body {
@@ -170,11 +150,6 @@ aside {
 }
 // Nav Bar //
 
-@keyframes showmenu {
-    from {display: none;}
-    to {display: inline-block;}
-}
-
 header h1 {
 	font-size: 350%;
 }
@@ -253,16 +228,6 @@ ul {
 
 h3+ul {
     padding: 2em;
-}
-
- // swimming koi
- @keyframes spin {
-    from {
-        transform:rotate(360deg);
-    }
-    to {
-        transform:rotate(0deg);
-    }
 }
 
 //Background

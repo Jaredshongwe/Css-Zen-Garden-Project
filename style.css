@@ -1,5 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda&family=Raleway&display=swap");
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes showmenu {
+  from {
+    display: none;
+  }
+  to {
+    display: inline-block;
+  }
+}
+
+@keyframes showmenu {
+  from {
+    display: none;
+  }
+  to {
+    display: inline-block;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -168,24 +207,6 @@ aside {
   grid-area: 4 / 2 / 5 / 3;
 }
 
-@-webkit-keyframes showmenu {
-  from {
-    display: none;
-  }
-  to {
-    display: inline-block;
-  }
-}
-
-@keyframes showmenu {
-  from {
-    display: none;
-  }
-  to {
-    display: inline-block;
-  }
-}
-
 header h1 {
   font-size: 350%;
 }
@@ -265,28 +286,6 @@ ul {
 
 h3 + ul {
   padding: 2em;
-}
-
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes spin {
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
 }
 
 body::before {
